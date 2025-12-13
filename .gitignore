@@ -91,4 +91,4 @@ tags
 
 
 # Ignore sizeof_ptr_vs_array in log/
-disc/sizeof_ptr_vs_array
+extension/sizeof_ptr_vs_array
