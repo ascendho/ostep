@@ -1,0 +1,91 @@
+# .gitignore for this workspace (OSTEP examples and code)
+# 包含常见的操作系统、编辑器、构建产物和临时文件
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build / output
+/build/
+/dist/
+/bin/
+/obj/
+*.o
+*.out
+a.out
+*.exe
+*.dll
+*.so
+*.dylib
+
+# C/C++ coverage & profiling
+*.gcda
+*.gcno
+*.gcov
+
+# Compiled Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# Vim / Emacs / backup
+*~
+*.swp
+*.swo
+.#*
+# Emacs backup files
+*#
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Temporary files
+/tmp/
+/temp/
+*.tmp
+
+# Misc
+tags
+.DS_Store
+
+# Ignore local build/artifacts for example C program(s)
+/code/**/a.out
+/code/**/*.o
+
+# Ignore specific binary files in code/
+/code/**/va
+/code/va
+
+# More compiled binaries/executables under `code/`
+# common outputs, temporary build dirs and platform-specific binaries
+/code/**/*.out
+/code/**/core
+/code/**/*.elf
+/code/**/*.exe
+/code/**/*.app
+/code/**/bin/
+/code/**/build/
+/code/**/dist/
+/code/**/out/
+/code/**/*.class
+
