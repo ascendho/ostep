@@ -94,5 +94,6 @@ tags
 /code/**/thread_create
 /code/**/thread_create_simple_args
 /code/**/thread_create_with_return_args
-# Ignore sizeof_ptr_vs_array in log/
+# Ignore executables in extension/
 extension/sizeof_ptr_vs_array
+extension/thread_stack_vs_heap_compare
