@@ -88,7 +88,8 @@ tags
 /code/**/dist/
 /code/**/out/
 /code/**/*.class
-
-
+# 忽略 code/ 下名为 t0 和 t1 的可执行文件
+/code/**/t0
+/code/**/t1
 # Ignore sizeof_ptr_vs_array in log/
 extension/sizeof_ptr_vs_array
