@@ -21,7 +21,7 @@ typedef struct
     int y; // 返回结果2
 } myret_t;
 
-// -------------------------- 错误线程：返回栈局部变量指针 --------------------------
+// 错误线程：返回栈局部变量指针
 void *bad_mythread(void *arg)
 {
     myarg_t *args = (myarg_t *)arg;
@@ -33,11 +33,12 @@ void *bad_mythread(void *arg)
     oops.y = 2;
 
     printf("【错误线程】准备返回栈变量地址，此时oops.x=%d, oops.y=%d\n", oops.x, oops.y);
+    printf("【错误线程】注意：线程结束后，栈变量oops的内存会被系统回收，返回的地址将无效\n");
     // 返回栈局部变量的地址（线程结束后该地址无效）
     return (void *)&oops;
 }
 
-// -------------------------- 正确线程：返回堆内存指针 --------------------------
+// 正确线程：返回堆内存指针
 void *good_mythread(void *arg)
 {
     myarg_t *args = (myarg_t *)arg;
@@ -50,6 +51,7 @@ void *good_mythread(void *arg)
     result->x = 1;
     result->y = 2;
     printf("【正确线程】准备返回堆变量地址，此时result->x=%d, result->y=%d\n", result->x, result->y);
+    printf("【正确线程】注意：线程结束后，堆变量result的内存仍有效，需主线程手动释放\n");
     // 返回堆内存地址（线程结束后仍有效）
     return (void *)result;
 }
@@ -57,9 +59,10 @@ void *good_mythread(void *arg)
 int main()
 {
     // 1. 定义线程标识符和参数
-    pthread_t bad_tid, good_tid;       // 错误线程/正确线程的标识符
-    myarg_t bad_args, good_args;       // 两个线程的输入参数
-    myret_t *bad_result, *good_result; // 接收两个线程的返回值
+    pthread_t bad_tid, good_tid; // 错误线程/正确线程的标识符
+    myarg_t bad_args, good_args; // 两个线程的输入参数
+    void *bad_result_raw;        // 仅接收错误线程的原始返回值（不直接访问）
+    myret_t *good_result;        // 接收正确线程的返回值
 
     // 2. 初始化参数
     bad_args.a = 10;
@@ -67,30 +70,34 @@ int main()
     good_args.a = 30;
     good_args.b = 40; // 正确线程参数
 
-    // 3. 创建错误线程
-    int rc = pthread_create(&bad_tid, NULL, bad_mythread, &bad_args);
+    // 3. 先创建并运行正确线程（确保能看到正确效果）
+    int rc = pthread_create(&good_tid, NULL, good_mythread, &good_args);
     assert(rc == 0);
-    // 4. 创建正确线程
-    rc = pthread_create(&good_tid, NULL, good_mythread, &good_args);
+    // 4. 再创建并运行错误线程
+    rc = pthread_create(&bad_tid, NULL, bad_mythread, &bad_args);
     assert(rc == 0);
 
-    // 5. 等待错误线程执行完毕，获取返回值（野指针）
-    rc = pthread_join(bad_tid, (void **)&bad_result);
-    assert(rc == 0);
-    printf("\n【主线程】获取错误线程返回值：x=%d, y=%d（结果不可预测，大概率是垃圾值）\n",
-           bad_result->x, bad_result->y);
-
-    // 6. 等待正确线程执行完毕，获取返回值（有效指针）
+    // 5. 等待正确线程执行完毕，获取并访问有效返回值
     rc = pthread_join(good_tid, (void **)&good_result);
     assert(rc == 0);
-    printf("\n【主线程】获取正确线程返回值：x=%d, y=%d（结果始终稳定）\n",
+    printf("\n====================================\n");
+    printf("【主线程】获取正确线程返回值：x=%d, y=%d（结果始终稳定）\n",
            good_result->x, good_result->y);
+
+    // 6. 等待错误线程执行完毕，仅接收返回值（不访问野指针内容）
+    rc = pthread_join(bad_tid, &bad_result_raw);
+    assert(rc == 0);
+    printf("\n【主线程】获取错误线程返回的地址：%p（该地址已无效，禁止访问内容）\n",
+           bad_result_raw);
+    printf("【主线程】提示：若强行访问该地址的x/y，会触发段错误（非法内存访问）\n");
 
     // 7. 释放正确线程的堆内存（避免内存泄漏）
     free(good_result);
     good_result = NULL; // 避免野指针
 
     printf("\n====================================\n");
-    printf("总结：错误线程返回栈地址（无效），正确线程返回堆地址（有效）\n");
+    printf("完整对比总结：\n");
+    printf("1. 错误线程：返回栈地址 → 线程结束后地址无效 → 访问会段错误\n");
+    printf("2. 正确线程：返回堆地址 → 线程结束后地址有效 → 访问稳定，需手动free\n");
     return 0;
 }
