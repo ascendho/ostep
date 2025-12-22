@@ -94,6 +94,15 @@ tags
 /code/**/thread_create
 /code/**/thread_create_simple_args
 /code/**/thread_create_with_return_args
+
+# 忽略code/threads-cv/ 下的可执行文件
+/code/threads-cv/join_modular
+/code/threads-cv/join_no_lock
+/code/threads-cv/join_no_state_var
+/code/threads-cv/join_spin
+/code/threads-cv/join
+/code/threads-cv/pc
+/code/threads-cv/pc_single_cv
 # Ignore executables in extension/
 extension/sizeof_ptr_vs_array
 extension/thread_stack_vs_heap_compare
