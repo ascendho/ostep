@@ -1,0 +1,559 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: vm-paging-intro-eg.eps
+%%Creator: zplot version:python version 0.1
+%%CreationDate: 10:18:29 02/12/11 CST
+%%DocumentFonts: (atend)
+%%BoundingBox: 0 0 345.0 40.0
+%%Orientation: Portrait
+%%EndComments
+% zdraw dictionary
+/zdict 256 dict def
+zdict begin
+/cpx 0 def
+/cpy 0 def
+/recordcp {currentpoint /cpy exch def /cpx exch def} bind def
+/m {moveto} bind def
+/l {lineto} bind def
+/mr {rmoveto} bind def
+/lr {rlineto} bind def
+/np {newpath} bind def
+/cp {closepath} bind def
+/st {stroke} bind def
+/fl {fill} bind def
+/gs {gsave} bind def
+/gr {grestore} bind def
+/slw {setlinewidth} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/sc  {setrgbcolor} bind def
+/sd  {setdash} bind def
+/lshow {show recordcp} def
+/rshow {dup stringwidth pop neg 0 mr show recordcp} def
+/cshow {dup stringwidth pop -2 div 0 mr show recordcp} def
+end
+zdict begin
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+20.0 32.0 m
+(31) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+30.0 32.0 m
+(30) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+40.0 32.0 m
+(29) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+50.0 32.0 m
+(28) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+60.0 32.0 m
+(27) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+70.0 32.0 m
+(26) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+80.0 32.0 m
+(25) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+90.0 32.0 m
+(24) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+100.0 32.0 m
+(23) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+110.0 32.0 m
+(22) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+120.0 32.0 m
+(21) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+130.0 32.0 m
+(20) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+140.0 32.0 m
+(19) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+150.0 32.0 m
+(18) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+160.0 32.0 m
+(17) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+170.0 32.0 m
+(16) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+180.0 32.0 m
+(15) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+190.0 32.0 m
+(14) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+200.0 32.0 m
+(13) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+210.0 32.0 m
+(12) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+220.0 32.0 m
+(11) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+230.0 32.0 m
+(10) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+240.0 32.0 m
+(9) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+250.0 32.0 m
+(8) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+260.0 32.0 m
+(7) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+270.0 32.0 m
+(6) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+280.0 32.0 m
+(5) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+290.0 32.0 m
+(4) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+300.0 32.0 m
+(3) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+310.0 32.0 m
+(2) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+320.0 32.0 m
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 6.0 scalefont setfont
+330.0 32.0 m
+(0) cshow
+st
+gr
+gs
+np
+15.0 10.0 m
+15.0 30.0 l
+215.0 30.0 l
+215.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+115.0 20.0 m
+0.0 -2.88 mr
+(PFN) cshow
+st
+gr
+gs
+np
+215.0 10.0 m
+215.0 30.0 l
+245.0 30.0 l
+245.0 10.0 l
+cp
+clip
+np
+215.0 10.0 m
+215.0 30.0 l
+245.0 30.0 l
+245.0 10.0 l
+cp
+0.83 0.83 0.83 sc
+fl
+gr
+gs
+np
+215.0 10.0 m
+215.0 30.0 l
+245.0 30.0 l
+245.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+230.0 20.0 m
+0.0 -2.88 mr
+() cshow
+st
+gr
+gs
+np
+245.0 10.0 m
+245.0 30.0 l
+255.0 30.0 l
+255.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+250.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(G) cshow
+gr
+st
+gr
+gs
+np
+255.0 10.0 m
+255.0 30.0 l
+265.0 30.0 l
+265.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+260.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(PAT) cshow
+gr
+st
+gr
+gs
+np
+265.0 10.0 m
+265.0 30.0 l
+275.0 30.0 l
+275.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+270.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(D) cshow
+gr
+st
+gr
+gs
+np
+275.0 10.0 m
+275.0 30.0 l
+285.0 30.0 l
+285.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+280.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(A) cshow
+gr
+st
+gr
+gs
+np
+285.0 10.0 m
+285.0 30.0 l
+295.0 30.0 l
+295.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+290.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(PCD) cshow
+gr
+st
+gr
+gs
+np
+295.0 10.0 m
+295.0 30.0 l
+305.0 30.0 l
+305.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+300.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(PWT) cshow
+gr
+st
+gr
+gs
+np
+305.0 10.0 m
+305.0 30.0 l
+315.0 30.0 l
+315.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+310.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(U/S) cshow
+gr
+st
+gr
+gs
+np
+315.0 10.0 m
+315.0 30.0 l
+325.0 30.0 l
+325.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+320.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(R/W) cshow
+gr
+st
+gr
+gs
+np
+325.0 10.0 m
+325.0 30.0 l
+335.0 30.0 l
+335.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+330.0 20.0 m
+gs
+90.0 rotate
+0.0 -2.52 mr
+(P) cshow
+gr
+st
+gr
+% zdraw epilogue
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

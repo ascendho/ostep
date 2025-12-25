@@ -1,0 +1,2108 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: vm-paging-multilevel-1.eps
+%%Creator: zplot version:python version 0.1
+%%CreationDate: 09:19:54 02/15/11 CST
+%%DocumentFonts: (atend)
+%%BoundingBox: 0 0 460.0 240.0
+%%Orientation: Portrait
+%%EndComments
+% zdraw dictionary
+/zdict 256 dict def
+zdict begin
+/cpx 0 def
+/cpy 0 def
+/recordcp {currentpoint /cpy exch def /cpx exch def} bind def
+/m {moveto} bind def
+/l {lineto} bind def
+/mr {rmoveto} bind def
+/lr {rlineto} bind def
+/np {newpath} bind def
+/cp {closepath} bind def
+/st {stroke} bind def
+/fl {fill} bind def
+/gs {gsave} bind def
+/gr {grestore} bind def
+/slw {setlinewidth} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/sc  {setrgbcolor} bind def
+/sd  {setdash} bind def
+/lshow {show recordcp} def
+/rshow {dup stringwidth pop neg 0 mr show recordcp} def
+/cshow {dup stringwidth pop -2 div 0 mr show recordcp} def
+end
+zdict begin
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+35.0 173.0 m
+gs
+90 rotate
+0.0 -3.6 mr
+(valid) lshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+50.0 173.0 m
+gs
+90 rotate
+0.0 -3.6 mr
+(prot) lshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+85.0 173.0 m
+(PFN) cshow
+st
+gr
+gs
+np
+30.0 160.0 m
+30.0 170.0 l
+40.0 170.0 l
+40.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 160.0 m
+40.0 170.0 l
+60.0 170.0 l
+60.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 160.0 m
+60.0 170.0 l
+110.0 170.0 l
+110.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 165.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 165.0 m
+0.0 -2.88 mr
+(rx) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 165.0 m
+0.0 -2.88 mr
+(12) cshow
+st
+gr
+gs
+np
+30.0 150.0 m
+30.0 160.0 l
+40.0 160.0 l
+40.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 150.0 m
+40.0 160.0 l
+60.0 160.0 l
+60.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 150.0 m
+60.0 160.0 l
+110.0 160.0 l
+110.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 155.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 155.0 m
+0.0 -2.88 mr
+(rx) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 155.0 m
+0.0 -2.88 mr
+(13) cshow
+st
+gr
+gs
+np
+30.0 140.0 m
+30.0 150.0 l
+40.0 150.0 l
+40.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 140.0 m
+40.0 150.0 l
+60.0 150.0 l
+60.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 140.0 m
+60.0 150.0 l
+110.0 150.0 l
+110.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 145.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 145.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 145.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 130.0 m
+30.0 140.0 l
+40.0 140.0 l
+40.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 130.0 m
+40.0 140.0 l
+60.0 140.0 l
+60.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 130.0 m
+60.0 140.0 l
+110.0 140.0 l
+110.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 135.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 135.0 m
+0.0 -2.88 mr
+(rw) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 135.0 m
+0.0 -2.88 mr
+(100) cshow
+st
+gr
+gs
+np
+30.0 120.0 m
+30.0 130.0 l
+40.0 130.0 l
+40.0 120.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 120.0 m
+40.0 130.0 l
+60.0 130.0 l
+60.0 120.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 120.0 m
+60.0 130.0 l
+110.0 130.0 l
+110.0 120.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 125.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 125.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 125.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 110.0 m
+30.0 120.0 l
+40.0 120.0 l
+40.0 110.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 110.0 m
+40.0 120.0 l
+60.0 120.0 l
+60.0 110.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 110.0 m
+60.0 120.0 l
+110.0 120.0 l
+110.0 110.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 115.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 115.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 115.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 100.0 m
+30.0 110.0 l
+40.0 110.0 l
+40.0 100.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 100.0 m
+40.0 110.0 l
+60.0 110.0 l
+60.0 100.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 100.0 m
+60.0 110.0 l
+110.0 110.0 l
+110.0 100.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 105.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 105.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 105.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 90.0 m
+30.0 100.0 l
+40.0 100.0 l
+40.0 90.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 90.0 m
+40.0 100.0 l
+60.0 100.0 l
+60.0 90.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 90.0 m
+60.0 100.0 l
+110.0 100.0 l
+110.0 90.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 95.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 95.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 95.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 80.0 m
+30.0 90.0 l
+40.0 90.0 l
+40.0 80.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 80.0 m
+40.0 90.0 l
+60.0 90.0 l
+60.0 80.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 80.0 m
+60.0 90.0 l
+110.0 90.0 l
+110.0 80.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 85.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 85.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 85.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 70.0 m
+30.0 80.0 l
+40.0 80.0 l
+40.0 70.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 70.0 m
+40.0 80.0 l
+60.0 80.0 l
+60.0 70.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 70.0 m
+60.0 80.0 l
+110.0 80.0 l
+110.0 70.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 75.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 75.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 75.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 60.0 m
+30.0 70.0 l
+40.0 70.0 l
+40.0 60.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 60.0 m
+40.0 70.0 l
+60.0 70.0 l
+60.0 60.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 60.0 m
+60.0 70.0 l
+110.0 70.0 l
+110.0 60.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 65.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 65.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 65.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 50.0 m
+30.0 60.0 l
+40.0 60.0 l
+40.0 50.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 50.0 m
+40.0 60.0 l
+60.0 60.0 l
+60.0 50.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 50.0 m
+60.0 60.0 l
+110.0 60.0 l
+110.0 50.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 55.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 55.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 55.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 40.0 m
+30.0 50.0 l
+40.0 50.0 l
+40.0 40.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 40.0 m
+40.0 50.0 l
+60.0 50.0 l
+60.0 40.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 40.0 m
+60.0 50.0 l
+110.0 50.0 l
+110.0 40.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 45.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 45.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 45.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 30.0 m
+30.0 40.0 l
+40.0 40.0 l
+40.0 30.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 30.0 m
+40.0 40.0 l
+60.0 40.0 l
+60.0 30.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 30.0 m
+60.0 40.0 l
+110.0 40.0 l
+110.0 30.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 35.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 35.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 35.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+30.0 20.0 m
+30.0 30.0 l
+40.0 30.0 l
+40.0 20.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 20.0 m
+40.0 30.0 l
+60.0 30.0 l
+60.0 20.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 20.0 m
+60.0 30.0 l
+110.0 30.0 l
+110.0 20.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 25.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 25.0 m
+0.0 -2.88 mr
+(rw) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 25.0 m
+0.0 -2.88 mr
+(86) cshow
+st
+gr
+gs
+np
+30.0 10.0 m
+30.0 20.0 l
+40.0 20.0 l
+40.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+40.0 10.0 m
+40.0 20.0 l
+60.0 20.0 l
+60.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+60.0 10.0 m
+60.0 20.0 l
+110.0 20.0 l
+110.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+35.0 15.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+50.0 15.0 m
+0.0 -2.88 mr
+(rw) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+85.0 15.0 m
+0.0 -2.88 mr
+(15) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+70.0 230.0 m
+0.0 -3.6 mr
+(Linear Page Table) cshow
+st
+gr
+gs
+np
+30.0 205.0 m
+30.0 215.0 l
+110.0 215.0 l
+110.0 205.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+28.0 210.0 m
+0.0 -2.88 mr
+(PTBR) rshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+70.0 210.0 m
+0.0 -2.88 mr
+(201) cshow
+st
+gr
+gs
+np
+115.0 210.0 m
+135.0 210.0 l
+135.0 170.0 l
+130.0 170.0 l
+0.5 slw
+st
+gs
+np
+130.0 170.0 m
+180.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+fl
+gr
+gs
+np
+130.0 170.0 m
+180.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gr
+gs
+np
+20.0 170.0 m
+120.0 170.0 l
+st
+gr
+gs
+np
+20.0 130.0 m
+120.0 130.0 l
+st
+gr
+gs
+np
+20.0 90.0 m
+120.0 90.0 l
+st
+gr
+gs
+np
+20.0 50.0 m
+120.0 50.0 l
+st
+gr
+gs
+np
+20.0 10.0 m
+120.0 10.0 l
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+120.0 150.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 201) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+120.0 110.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 202) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+120.0 70.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 203) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+120.0 30.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 204) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+355.0 173.0 m
+gs
+90 rotate
+0.0 -3.6 mr
+(valid) lshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+370.0 173.0 m
+gs
+90 rotate
+0.0 -3.6 mr
+(prot) lshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+405.0 173.0 m
+(PFN) cshow
+st
+gr
+gs
+np
+350.0 160.0 m
+350.0 170.0 l
+360.0 170.0 l
+360.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 160.0 m
+360.0 170.0 l
+380.0 170.0 l
+380.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 160.0 m
+380.0 170.0 l
+430.0 170.0 l
+430.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 165.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 165.0 m
+0.0 -2.88 mr
+(rx) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 165.0 m
+0.0 -2.88 mr
+(12) cshow
+st
+gr
+gs
+np
+350.0 150.0 m
+350.0 160.0 l
+360.0 160.0 l
+360.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 150.0 m
+360.0 160.0 l
+380.0 160.0 l
+380.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 150.0 m
+380.0 160.0 l
+430.0 160.0 l
+430.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 155.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 155.0 m
+0.0 -2.88 mr
+(rx) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 155.0 m
+0.0 -2.88 mr
+(13) cshow
+st
+gr
+gs
+np
+350.0 140.0 m
+350.0 150.0 l
+360.0 150.0 l
+360.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 140.0 m
+360.0 150.0 l
+380.0 150.0 l
+380.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 140.0 m
+380.0 150.0 l
+430.0 150.0 l
+430.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 145.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 145.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 145.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+350.0 130.0 m
+350.0 140.0 l
+360.0 140.0 l
+360.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 130.0 m
+360.0 140.0 l
+380.0 140.0 l
+380.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 130.0 m
+380.0 140.0 l
+430.0 140.0 l
+430.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 135.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 135.0 m
+0.0 -2.88 mr
+(rw) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 135.0 m
+0.0 -2.88 mr
+(100) cshow
+st
+gr
+gs
+np
+350.0 40.0 m
+350.0 50.0 l
+360.0 50.0 l
+360.0 40.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 40.0 m
+360.0 50.0 l
+380.0 50.0 l
+380.0 40.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 40.0 m
+380.0 50.0 l
+430.0 50.0 l
+430.0 40.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 45.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 45.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 45.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+350.0 30.0 m
+350.0 40.0 l
+360.0 40.0 l
+360.0 30.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 30.0 m
+360.0 40.0 l
+380.0 40.0 l
+380.0 30.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 30.0 m
+380.0 40.0 l
+430.0 40.0 l
+430.0 30.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 35.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 35.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 35.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+350.0 20.0 m
+350.0 30.0 l
+360.0 30.0 l
+360.0 20.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 20.0 m
+360.0 30.0 l
+380.0 30.0 l
+380.0 20.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 20.0 m
+380.0 30.0 l
+430.0 30.0 l
+430.0 20.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 25.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 25.0 m
+0.0 -2.88 mr
+(rw) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 25.0 m
+0.0 -2.88 mr
+(86) cshow
+st
+gr
+gs
+np
+350.0 10.0 m
+350.0 20.0 l
+360.0 20.0 l
+360.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+360.0 10.0 m
+360.0 20.0 l
+380.0 20.0 l
+380.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+380.0 10.0 m
+380.0 20.0 l
+430.0 20.0 l
+430.0 10.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+355.0 15.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+370.0 15.0 m
+0.0 -2.88 mr
+(rw) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+405.0 15.0 m
+0.0 -2.88 mr
+(15) cshow
+st
+gr
+gs
+np
+340.0 170.0 m
+440.0 170.0 l
+st
+gr
+gs
+np
+340.0 130.0 m
+440.0 130.0 l
+st
+gr
+gs
+np
+340.0 90.0 m
+440.0 90.0 l
+st
+gr
+gs
+np
+340.0 50.0 m
+440.0 50.0 l
+st
+gr
+gs
+np
+340.0 10.0 m
+440.0 10.0 l
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+390.0 110.0 m
+0.0 -2.88 mr
+([Page 1 of PT: Not Allocated]) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+390.0 70.0 m
+0.0 -2.88 mr
+([Page 2 of PT: Not Allocated]) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+440.0 150.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 201) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+440.0 30.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 204) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+240.0 230.0 m
+0.0 -3.6 mr
+(Multi-level Page Table) cshow
+st
+gr
+gs
+np
+200.0 205.0 m
+200.0 215.0 l
+280.0 215.0 l
+280.0 205.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+198.0 210.0 m
+0.0 -2.88 mr
+(PDBR) rshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8 scalefont setfont
+240.0 210.0 m
+0.0 -2.88 mr
+(200) cshow
+st
+gr
+gs
+np
+285.0 210.0 m
+305.0 210.0 l
+305.0 170.0 l
+300.0 170.0 l
+0.5 slw
+st
+gs
+np
+300.0 170.0 m
+180.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+fl
+gr
+gs
+np
+300.0 170.0 m
+180.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+205.0 173.0 m
+gs
+90 rotate
+0.0 -3.6 mr
+(valid) lshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+245.0 173.0 m
+(PFN) cshow
+st
+gr
+gs
+np
+200.0 160.0 m
+200.0 170.0 l
+210.0 170.0 l
+210.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+210.0 160.0 m
+210.0 170.0 l
+280.0 170.0 l
+280.0 160.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+205.0 165.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+245.0 165.0 m
+0.0 -2.88 mr
+(201) cshow
+st
+gr
+gs
+np
+200.0 150.0 m
+200.0 160.0 l
+210.0 160.0 l
+210.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+210.0 150.0 m
+210.0 160.0 l
+280.0 160.0 l
+280.0 150.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+205.0 155.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+245.0 155.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+200.0 140.0 m
+200.0 150.0 l
+210.0 150.0 l
+210.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+210.0 140.0 m
+210.0 150.0 l
+280.0 150.0 l
+280.0 140.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+205.0 145.0 m
+0.0 -2.88 mr
+(0) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+245.0 145.0 m
+0.0 -2.88 mr
+(-) cshow
+st
+gr
+gs
+np
+200.0 130.0 m
+200.0 140.0 l
+210.0 140.0 l
+210.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+210.0 130.0 m
+210.0 140.0 l
+280.0 140.0 l
+280.0 130.0 l
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+205.0 135.0 m
+0.0 -2.88 mr
+(1) cshow
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 8.0 scalefont setfont
+245.0 135.0 m
+0.0 -2.88 mr
+(204) cshow
+st
+gr
+gs
+np
+190.0 170.0 m
+290.0 170.0 l
+st
+gr
+gs
+np
+190.0 130.0 m
+290.0 130.0 l
+st
+gr
+gs
+np
+290.0 165.0 m
+335.0 165.0 l
+0.5 slw
+st
+gs
+np
+335.0 165.0 m
+0.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+fl
+gr
+gs
+np
+335.0 165.0 m
+0.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gr
+gs
+np
+290.0 135.0 m
+310.0 135.0 l
+310.0 45.0 l
+335.0 45.0 l
+0.5 slw
+st
+gs
+np
+335.0 45.0 m
+0.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+fl
+gr
+gs
+np
+335.0 45.0 m
+0.0 rotate
+0.0 1.5 lr
+4.0 -1.5 lr
+-4.0 -1.5 lr
+cp
+0.00 0.00 0.00 sc
+0.5 slw
+st
+gr
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 7 scalefont setfont
+190.0 150.0 m
+gs
+90 rotate
+0.0 -2.52 mr
+(PFN 200) cshow
+gr
+st
+gr
+gs
+np
+0.00 0.00 0.00 sc
+(Helvetica) findfont 10 scalefont setfont
+240.0 120.0 m
+0.0 -3.6 mr
+(The Page Directory) cshow
+st
+gr
+% zdraw epilogue
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
